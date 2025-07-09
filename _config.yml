@@ -24,7 +24,7 @@ name                     : "baekyeomin"
 description              : "백여민의 개발 블로그입니다."
 url                      : "https://baekyeomin.github.io"
 baseurl                  : ""
-repository               : "baekyeomin/baekyeomin.github.io"
+repository               : "baekyeomin/comments"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -44,9 +44,13 @@ comments:
     appid                :
     num_posts            : # 5 (default)
     colorscheme          : # "light" (default), "dark"
-  utterances:                 
+  utterances:              
+    repo                 : "baekyeomin/baekyeomin.github.io"
     theme                : "github-light" #(default), "github-dark"
     issue_term           : "pathname"
+    label                : "comments"
+    follow_site_theme    : true
+    
   giscus:
     repo_id              : # Shown during giscus setup at https://giscus.app
     category_name        : # Full text name of the category
