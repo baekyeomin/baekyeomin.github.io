@@ -3,6 +3,7 @@ title: "첫 게시물이에욤"
 date: 2025-07-09
 author : yeomin
 layout: single
+comments: true
 ---
 
 # 짜잔!
