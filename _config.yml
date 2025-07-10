@@ -331,3 +331,23 @@ defaults:
       share: true
       related: true
       show_date : true
+      comments: true
+      share: true
+      related: true
+      sidebar:
+        nav: "side"
+
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      show_date: false
+      comments: false
+      share: true
+      related: false
+      sidebar:
+        nav: "side"
