@@ -24,6 +24,7 @@ name                     : "baekyeomin"
 description              : "백여민의 개발 블로그입니다."
 url                      : "https://baekyeomin.github.io"
 baseurl                  : ""
+show_sidebar             : true
 repository               : "baekyeomin/baekyeomin.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
