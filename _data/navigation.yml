@@ -9,14 +9,15 @@ main:
 
 side:
   - title: BaekJoon
+    url: /categories/BaekJoon
     children:
       - title: "Gold"
-        url: /categories/Gold/
+        url: /categories/BaekJoon_Gold/
       - title: ""
       - title: "Silver"
-        url: /categories/Silver/
+        url: /categories/BaekJoon_Silver/
       - title: "Bronze"
-        url: /categories/Bronze/
+        url: /categories/BaekJoon_Bronze/
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
