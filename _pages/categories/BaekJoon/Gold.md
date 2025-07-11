@@ -1,6 +1,6 @@
 ---
 title: "Gold"
-permalink: /categories/BaekJoon_Gold/
+permalink: /categories/BaekJoon/Gold/
 layout: category
 author_profile: true
 taxonomy: BaekJoon_gold
