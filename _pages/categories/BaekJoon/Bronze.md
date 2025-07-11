@@ -8,4 +8,4 @@ toc: true
 comments: true
 toc_sticky: true
 ---
-This category includes records of Baek Yeo-min solving Baekjoon Bronze problems.
+This category includes records of Baekyeomin solving Baekjoon Bronze problems.
