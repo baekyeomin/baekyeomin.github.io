@@ -16,7 +16,7 @@ side:
       - title: "Silver"
         url: /categories/BaekJoon_Silver/
       - title: "Bronze"
-        url: /categories/BaekJoon_Bronze/
+        url: /BaekJoon_Bronze/
   - title: "CS"
     url: /categories/CS
     children:
