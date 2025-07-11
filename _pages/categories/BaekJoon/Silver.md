@@ -1,6 +1,6 @@
 ---
 title: "Silver"
-permalink: /categories/BaekJoon_Silver/
+permalink: /categories/BaekJoon/Silver/
 layout: category
 author_profile: true
 taxonomy: BaekJoon_Silver
