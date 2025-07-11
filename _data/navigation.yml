@@ -9,7 +9,6 @@ main:
 
 side:
   - title: BaekJoon
-    url: /categories/BaekJoon
     children:
       - title: "Gold"
         url: /categories/BaekJoon_Gold/
@@ -18,7 +17,6 @@ side:
       - title: "Bronze"
         url: /categories/BaekJoon_Bronze/
   - title: "CS"
-    url: /categories/CS
     children:
       - title: "Algorithms"
         url: /categories/Algorithms/
