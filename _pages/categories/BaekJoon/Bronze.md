@@ -1,6 +1,6 @@
 ---
 title: "Bronze"
-permalink: /categories/BaekJoon_Bronze/
+permalink: /categories/BaekJoon/Bronze/
 layout: category
 author_profile: true
 taxonomy: BaekJoon_Bronze
