@@ -11,17 +11,17 @@ side:
   - title: BaekJoon
     children:
       - title: "Gold"
-        url: /categories/BaekJoon_Gold/
+        url: /categories/BaekJoon/Gold/
       - title: "Silver"
-        url: /categories/BaekJoon_Silver/
+        url: /categories/BaekJoon/Silver/
       - title: "Bronze"
-        url: /categories/BaekJoon_Bronze/
+        url: /categories/BaekJoon/Bronze/
   - title: "CS"
     children:
       - title: "Algorithms"
-        url: /categories/Algorithms/
+        url: /categories/CS/Algorithms/
       - title: "Data Structure"
-        url: /categories/Data_Structure/
+        url: /categories/CS/Data_Structure/
     
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
