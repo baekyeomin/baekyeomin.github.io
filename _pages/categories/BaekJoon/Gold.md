@@ -3,7 +3,7 @@ title: "Gold"
 permalink: /categories/BaekJoon_Gold/
 layout: category
 author_profile: true
-taxonomy: category
+taxonomy: BaekJoon_gold
 toc: true
 comments: true
 toc_sticky: true
