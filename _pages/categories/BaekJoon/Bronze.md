@@ -3,7 +3,7 @@ title: "Bronze"
 permalink: /categories/BaekJoon/Bronze/
 layout: category
 author_profile: true
-taxonomy: BaekJoon_Bronze
+taxonomy: Bronze
 toc: true
 comments: true
 toc_sticky: true
