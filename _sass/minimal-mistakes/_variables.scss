@@ -53,8 +53,8 @@ $handwritten: 'Segoe Print', 'Bradley Hand', Chilanka, TSCu_Comic, casual, cursi
 
 /* Defaults used in Minimal mistakes */
 $default-sans-serif: "Ownglyph_corncorn-Rg", -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
-$default-serif: Georgia, Times, serif;
-$default-monospace: Monaco, Consolas, "Lucida Console", monospace;
+$default-serif: "Ownglyph_corncorn-Rg", Georgia, Times, serif;
+$default-monospace: "Ownglyph_corncorn-Rg", Monaco, Consolas, "Lucida Console", monospace;
 
 /* Emoji native from modern font stack - add to the end of the font-face for native emojis */
 $emoji-native: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
