@@ -66,8 +66,8 @@ $sans-serif-narrow: $sans-serif !default;
 $monospace: $default-monospace !default;
 
 $global-font-family: "Ownglyph_corncorn-Rg", $sans-serif !default;
-$header-font-family: $sans-serif !default;
-$caption-font-family: $serif !default;
+$header-font-family: "Ownglyph_corncorn-Rg", $sans-serif !default;
+$caption-font-family: "Ownglyph_corncorn-Rg", $serif !default;
 
 /* type scale */
 $type-size-1: 2.441em !default; // ~39.056px
