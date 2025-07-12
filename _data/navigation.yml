@@ -6,6 +6,8 @@ main:
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "⌕"
+    url: /search/
 
 side:
   - title: BaekJoon
