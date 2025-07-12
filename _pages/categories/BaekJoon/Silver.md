@@ -3,7 +3,7 @@ title: "Silver"
 permalink: /categories/BaekJoon/Silver/
 layout: category
 author_profile: true
-taxonomy: BaekJoon_Silver
+taxonomy: Silver
 toc: true
 comments: true
 toc_sticky: true
