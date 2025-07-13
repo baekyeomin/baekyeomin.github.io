@@ -27,11 +27,8 @@ side:
       - title: "Data Structure"
         url: /categories/CS/Data_Structure/
     
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+counts:
+  - title: "카테고리"
+    use: true
+  - title: "태그"
+    use: true
