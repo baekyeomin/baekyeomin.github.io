@@ -90,9 +90,9 @@ _Master your skills. Embrace AI. Think beyond boundaries._
 
 
 ## 2. 활동 사진
-![코위크 셀카](./assets/images/coweek_photo1.jpg)
+![코위크 셀카](/assets/images/coweek_photo1.jpg)
 요로코롬 마스코트 인형이랑 사진도 찍었었당
-![알펜시아 저녁노을](./assets/images/coweek_photo2.jpg)
+![알펜시아 저녁노을](/assets/images/coweek_photo2.jpg)
 친구랑 돌아다니면서 찍은 하늘.. 
 외국 느낌나고 몬가몬가 감성있었다.. 예뽀..
 
