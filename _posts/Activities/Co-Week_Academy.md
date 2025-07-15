@@ -2,7 +2,7 @@
 title: "[Co-Week Academy] Day1"
 categories: [Activities, Co-Week_Academy]
 tags:
-  - 인공지능
+  - AI
 layout: single
 toc : true
 toc_sticky: true
