@@ -1,6 +1,6 @@
 ---
 title: "[Co-Week Academy] Day1"
-categories: [Activities, Co-Week_Academy]
+categories: [activities, co-week-academy]
 tags:
   - AI
 layout: single
