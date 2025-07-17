@@ -28,7 +28,7 @@ side:
         url: /categories/CS/Data_Structure/
   - title: "Activities"
     children:
-      - title: "Co-Week-Academy"
+      - title: "Co-Week Academy"
         url: /categories/Activities/Co-Week-Academy/
     
 counts:
