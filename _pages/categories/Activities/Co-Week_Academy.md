@@ -1,9 +1,9 @@
 ---
 title: "Co-Week Academy"
-permalink: /categories/activities/co-week-academy/
+permalink: /categories/Activities/Co-Week Academy/
 layout: category
 author_profile: true
-taxonomy: co-week-academy
+taxonomy: Co-Week Academy
 toc: true
 comments: true
 toc_sticky: true
@@ -25,4 +25,3 @@ toc_sticky: true
 
 ---
 
-※ 각 강의에 대한 상세 내용은 개별 포스트에서 확인할 수 있습니다.
