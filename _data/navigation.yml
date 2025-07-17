@@ -28,8 +28,8 @@ side:
         url: /categories/CS/Data_Structure/
   - title: "Activities"
     children:
-      - title: "Co-Week Academy"
-        url: /categories/activities/co-week-academy/
+      - title: "Co-Week_Academy"
+        url: /categories/Activities/Co-Week_Academy/
     
 counts:
   - title: "카테고리"

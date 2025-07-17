@@ -1,9 +1,9 @@
 ---
 title: "Co-Week Academy"
-permalink: /categories/activities/co-week-academy/
+permalink: /categories/Activities/Co-Week_Academy/
 layout: category
 author_profile: true
-taxonomy: co-week-academy
+taxonomy: Co-Week_Academy
 toc: true
 comments: true
 toc_sticky: true
