@@ -1,9 +1,9 @@
 ---
-title: "Co-Week-Academy"
+title: "Co-Week Academy"
 permalink: /categories/Activities/Co-Week-Academy/
 layout: category
 author_profile: true
-taxonomy: Co-Week-Academy
+taxonomy: Co-Week Academy
 toc: true
 comments: true
 toc_sticky: true
