@@ -4,5 +4,9 @@
 <link rel="shortcut icon" href="{{ '/assets/images/favicon/favicon.ico' | relative_url }}" />
 <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/images/favicon/apple-touch-icon.png' | relative_url }}" />
 <link rel="manifest" href="{{ '/assets/images/favicon/site.webmanifest' | relative_url }}" />
+
+{% if page.use_math %}
+    {% include mathjax-support.html %}
+{% end if %}
 <!-- end custom head snippets -->
 

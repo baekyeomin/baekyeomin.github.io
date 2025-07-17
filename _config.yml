@@ -271,6 +271,7 @@ plugins:
   - jekyll-include-cache
   
 future: true
+mathjax: true
 
 # mimic GitHub Pages with --safe
 whitelist:
