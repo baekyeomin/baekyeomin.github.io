@@ -30,6 +30,10 @@ side:
     children:
       - title: "Co-Week Academy"
         url: /categories/Activities/Co-Week-Academy/
+  - title: "AI"
+    children:
+      - title: "ML"
+        url: /categories/AI/ML/
     
 counts:
   - title: "카테고리"
