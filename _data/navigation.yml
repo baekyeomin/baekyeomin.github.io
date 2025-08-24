@@ -30,6 +30,8 @@ side:
     children:
       - title: "Co-Week Academy"
         url: /categories/Activities/Co-Week-Academy/
+      - title: "Volunteering"
+        url: /categories/Activities/Volunteering/
   - title: "AI"
     children:
       - title: "ML"
