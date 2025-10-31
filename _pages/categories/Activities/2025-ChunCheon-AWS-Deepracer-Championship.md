@@ -1,5 +1,5 @@
 ---
-title: "2025-ChunCheon-AWS-Deepracer-Championship"
+title: "2025 ChunCheon AWS Deepracer Championship"
 permalink: /categories/Activities/2025-aws-deepracer/
 layout: category
 author_profile: true
