@@ -32,6 +32,8 @@ side:
         url: /categories/Activities/Co-Week-Academy/
       - title: "Volunteering"
         url: /categories/Activities/Volunteering/
+      - title: "2025 춘천 AWS 딥레이서 챔피언십"
+        url: /categories/Activities/2025-aws-deepracer/
   - title: "AI"
     children:
       - title: "ML"
