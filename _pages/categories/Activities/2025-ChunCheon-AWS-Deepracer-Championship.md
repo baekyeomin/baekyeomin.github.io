@@ -3,18 +3,18 @@ title: "2025-ChunCheon-AWS-Deepracer-Championship"
 permalink: /categories/Activities/2025-aws-deepracer/
 layout: category
 author_profile: true
-taxonomy: 2025-ChunCheon-AWS-Deepracer-Championship
+taxonomy: 2025-aws-deepracer
 toc: true
 comments: true
 toc_sticky: true
 ---
 
-2025년 8월 18일부터 9월 28일까지 진행된 **2025 춘천 AWS 딥레이서 챔피언십**에 참가한 기록을 정리한 카테고리입니다. 
+2025년 8월 18일부터 9월 28일까지 진행된<br> **2025 춘천 AWS 딥레이서 챔피언십**에 참가한 기록을 정리한 카테고리입니다. 
 
 ---
 
 ## 대회 포스터 
-![대회포스터](./assets/images/2025aws_poster.png)
+![대회포스터](/assets/images/2025aws_poster.png)
 
 
 ## 주최 및 주관
@@ -43,4 +43,4 @@ toc_sticky: true
 
 
 ## 대회 일정
-![대회일정표](./assets/images/2025aws_일정표.png)
+![대회일정표](/assets/images/2025aws_일정표.png)
