@@ -38,7 +38,8 @@ side:
     children:
       - title: "ML"
         url: /categories/AI/ML/
-    
+      - title: "NLP"
+        url: /categories/AI/NLP/
 counts:
   - title: "카테고리"
     use: true
