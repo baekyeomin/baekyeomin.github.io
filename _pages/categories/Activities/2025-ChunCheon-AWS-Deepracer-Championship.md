@@ -44,3 +44,4 @@ toc_sticky: true
 
 ## 대회 일정
 ![대회일정표](./assets/images/2025aws_일정표.png)
+  
