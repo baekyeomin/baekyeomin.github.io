@@ -1,6 +1,6 @@
 ---
 title: "2025 춘천 AWS 딥레이서 챔피언십"
-permalink: /categories/Activities/2025 춘천 AWS 딥레이서 챔피언십/
+permalink: /categories/Activities/2025-aws-deepracer/
 layout: category
 author_profile: true
 taxonomy: 2025 춘천 AWS 딥레이서 챔피언십
