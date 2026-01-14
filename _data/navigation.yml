@@ -38,8 +38,8 @@ side:
     children:
       - title: "ML"
         url: /categories/AI/ML/
-      - title: "NLP"
-        url: /categories/AI/NLP/
+      - title: "Recommender Systems"
+        url: /categories/AI/Recommender_Systems/
 counts:
   - title: "카테고리"
     use: true
