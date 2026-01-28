@@ -62,7 +62,48 @@ $\forall c \in C,\; s'_c = \arg\max_{s \in S} u(c, s)$
 
 
 
-### 🐾 추천이 만들어지는 흐름
-1. 경험적으로 효용함수 u (rating)를 정의 후 검증하거나
-2. MSE 같은 기준을 최소화하는 등의 방식으로 함수 / 모델 학습
-3. 예측한 평점 중 가장 큰 것 (또는 Top N개) 추천
+## 2. 접근 방식 기준 분류
+### 🐾 Content Based Methods
+Content-Based 방법은 <span style="background-color: #fff3cd">사용자 c가 과거에 높게 평가했던 아이템과 유사한 아이템 s의 효용(rating)을 추정하여 추천하는 방식</span>입니다. <br>
+이 방법은 다른 사용자의 정보는 사용하지 않고 **해당 사용자 본인의 과거 행동 기록** 과 **item의 내용 (Content)** 만을 사용합니다. <br> <br> 
+
+#### Item Profile과 TF-IDF
+CB에서 각 아이템은 보통 **키워드 기반의 벡터**로 표현되며, 논문에서는 이를 item profile 또는 content(s)라고 부릅니다. <br> <br> 
+예를 들어,
+- **Fab 시스템**: 웹페이지를 중요 단어 100개로 표현
+- **Syskill & Webert**: 정보량이 큰 단어 128개로 문서 표현
+<br> <br> 
+이처럼 문서를 문서를 키워드들의 집합으로 표현한 뒤, 각 단어에 가중치를 부여하는 대표적인 방법이 <span style="color: blue">TF-IDF</span>입니다 .
+- **TF (Term Frequency)**  
+  : 특정 단어가 한 문서 안에서 얼마나 자주 등장하는지  
+$ TF_{i,j} = \frac{f_{i,j}}{\max_z f_{z,j}} $
+
+- **IDF (Inverse Document Frequency)**  
+  : 해당 단어가 전체 문서 집합에서 얼마나 흔한지  
+
+$ IDF_i = \log \frac{N}{n_i} $
+
+- **TF-IDF**
+
+$ w_{i,j} = TF_{i,j} \times IDF_i $
+<span style="background-color: #fff3cd">한 문서에 자주 등장하지만 다른 문서에는 잘 등장하지 않는 단어일수록 그 문서를 잘 대표하는 키워드</span>가 됩니다. 
+<br> <br>
+아이템은 다음과 같은 벡터로 표현됩니다. 
+$ Content(d_j) = (w_{1j}, \dots, w_{kj}) $
+
+#### Content-Based Profile
+사용자는 과거에 보거나 높게 평가한 콘텐츠들을 기반으로 **ContentBasedProfile**이라는 사용자 선호 벡터를 가지게 됩니다. <br> <br> 
+
+이때 사용되는 대표적인 방법에는 아래와 같은 것들이 있다고 소개하지만, 자세하게는 설명하지 않습니다. 
+- Rocchio 알고리즘
+- Naive Bayes 분류기 
+- Winnow 알고리즘  
+
+이렇게 구성된 사용자 프로필과 아이템 콘텐츠 벡터 사이의 유사도를 계산하여 효용을 정의합니다.
+
+$ u(c, s) = score(ContentBasedProfile(c), Content(s)) $
+
+즉,  
+<span style="color: blue">content-based 추천에서 u(c, s)는 “얼마나 비슷한가”를 나타내는 유사도 기반 점수</span>라고 볼 수 있습니다.
+
+정보검색 스타일의 접근에서는 **코사인 유사도**가 자주 사용됩니다.
