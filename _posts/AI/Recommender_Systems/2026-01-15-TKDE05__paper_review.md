@@ -63,7 +63,7 @@ $\forall c \in C,\; s'_c = \arg\max_{s \in S} u(c, s)$
 
 
 ## 2. 접근 방식 기준 분류
-### 🐾 Content Based Methods
+### 🐾 Content Based Methods - Heuristic
 Content-Based 방법은 <span style="background-color: #fff3cd">사용자 c가 과거에 높게 평가했던 아이템과 유사한 아이템 s의 효용(rating)을 추정하여 추천하는 방식</span>입니다. <br>
 이 방법은 다른 사용자의 정보는 사용하지 않고 **해당 사용자 본인의 과거 행동 기록** 과 **item의 내용 (Content)** 만을 사용합니다. <br> <br> 
 
@@ -107,3 +107,22 @@ $ u(c, s) = score(ContentBasedProfile(c), Content(s)) $
 <span style="color: blue">content-based 추천에서 u(c, s)는 “얼마나 비슷한가”를 나타내는 유사도 기반 점수</span>라고 볼 수 있습니다.
 
 정보검색 스타일의 접근에서는 **코사인 유사도**가 자주 사용됩니다.
+
+> <span style="color: red">여기서 교수님께서 질문한 부분: </span> <br> 
+> **Q. Content 벡터는 tfidf로 구현했다면, Content based profile은 어떻게 구현하나요?** <br> 
+> A.사용자의 프로필은 사용자가 선호하는 item들의 content 벡터를 가중 평균한 벡터로 만들어야할 것 같습니다. <br> 평균을 내는 이유는 먼저 user 의 선호도 관련 정보를 하나의 user 벡터로 요약할 때 가장 보편적이면서 쉬운 방법이 평균을 사용하는 것이기 때문이라고 생각했고, 평균을 냄으로써 어떤 키워드가 여러 item에서 반복적으로 강하게 나오면 평균에서도 값이 커지고, 어떤 키워드가 몇몇 item에서만 우연히 나온 단어면 평균을 내면서 희석될 수 있기 때문에 사용하면 좋다고 생각합니다. <br> 
+> 식으로 표현하면 아래와 같을 것 같습니다. <br>
+> $p_c = \frac{\sum_{s \in I_c} w_{c,s}\, v_s}{\sum_{s \in I_c} w_{c,s}}$
+> <br>
+> 여기서  
+- $I_c$는 사용자 $c$가 보거나 평가한 item들의 집합이고,  
+- $v_s$는 TF-IDF로 표현된 item $s$의 content 벡터입니다.  
+- $w_{c,s}$는 사용자 $c$가 item $s$를 얼마나 선호하는지를 나타내는 가중치입니다
+><br> <br> 
+> **Q. "경험적으로" (Heuristic)의 의미가 뭐라고 생각하시나요?** <br> 
+> A. (이 부분은 내가 답한 후에 추후 더 공부해라고 하셔서 다시 생각해낸 답변) <br> 
+> 추천 시스템에서 heuristic (경험적인)의 의미는 <span style="background-color: #fff3cd"> 복잡한 모델을 학습하기 보다는 관찰된 데이터와 직관에 기반해서 효용을 근사적으로 계산하는 방식</span>을 쓸 때 경험적이라고 말하는 것이라고 생각합니다. <br> 경험적이라고 할 때는 이론적으로 이것이 정말 최적이라고는 증명되지 않았으나 현실의 데이터와 반복된 실험 경험을 통해 대체로 잘 작동한다고 알려진 방법을 사용할 때를 의미한다고 생각합니다. <br> 예를들어 평점 패턴이 비슷한 사용자는 취향도 비슷할 것이다, 유사한 아이템은 비슷한 평점을 받을 것이다와 같은 가정에서 출발해서 어느정도 의미있는 결과까지 내지만, 그 가정이 항상 참임을 수학적으로 증명하지는 않을 때 경험적이라고 할 수 있을 것 같습니다. 
+
+
+### 🐾 Content Based Methods - Model based
+heuri
