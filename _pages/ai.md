@@ -6,5 +6,5 @@ taxonomy: AI
 author_profile: true
 ---
 
-This category contains records of Baekyeomin's record of studying AI.
+This category contains Baekyeomin's record of studying AI.
 

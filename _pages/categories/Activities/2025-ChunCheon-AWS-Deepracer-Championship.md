@@ -7,6 +7,7 @@ taxonomy: 2025 AWS Deepracer Championship
 toc: true
 comments: true
 toc_sticky: true
+use_math: true
 ---
 
 2025년 8월 18일부터 9월 28일까지 진행된<br> **2025 춘천 AWS 딥레이서 챔피언십**에 참가한 기록을 정리한 카테고리입니다. 
