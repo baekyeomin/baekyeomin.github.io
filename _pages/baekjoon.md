@@ -1,8 +1,8 @@
 ---
 title: "BaekJoon"
 layout: category
-permalink: /ai/       
-taxonomy: AI        
+permalink: /baekjoon/       
+taxonomy: BaekJoon       
 author_profile: true
 ---
 
