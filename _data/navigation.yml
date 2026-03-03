@@ -38,6 +38,8 @@ side:
     children:
       - title: "ML"
         url: /categories/AI/ML/
+      - title: "DL"
+        url: /categories/AI/DL/
       - title: "Recommender Systems"
         url: /categories/AI/Recommender_Systems/
 counts:
