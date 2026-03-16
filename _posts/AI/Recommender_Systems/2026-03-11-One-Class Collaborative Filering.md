@@ -21,8 +21,13 @@ use_math: true
 이렇게 implicit data의 경우, explicit과 달리(explicit은 명시적으로 positive, negative 있음) <span style="color: blue"> negative example </span>이 없다. <br>
 대신 관찰된 postive와 missing data 만 있다. <br> <br>
 문제는 이 missing 값이 모호하다는 것이다. <br>
-missing data는 <br>1. 사용자가 관심이 없음 (negative)<br>
-2. 사용자가 아직 보지 못함 (unknown positive)<br> 이렇게 두 가지 가능성이 있다. 
+missing data는 <br>
+
+1. 사용자가 관심이 없음 (negative)<br>
+  
+2. 사용자가 아직 보지 못함 (unknown positive)<br> 
+
+이렇게 두 가지 가능성이 있다. 
    
 
 **missing 데이터 안에는 negative와 positive가 섞여 있기 때문에 missing 중에서 실제 positive를 찾아내야한다**
