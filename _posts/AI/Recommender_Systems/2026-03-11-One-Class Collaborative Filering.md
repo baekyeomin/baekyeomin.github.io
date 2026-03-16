@@ -61,15 +61,15 @@ Weighted Frobenius Loss : $L(X) = \sum_{ij} W_{ij}(R_{ij} - X_{ij})^2$ 인데, <
 $X = UV^T$ 를 대입하면 <br>
 $L(U,V) = \sum_{ij} W_{ij}(R_{ij} - U_i V_j^T)^2$이 된다. 
 
-<br> 
+<br>
 그런데 이제 과적합 방지를 위해 정규화항을 추가한다. <br>
 
-$L(U,V) = \sum_{ij} W_{ij}(R_{ij} - U_i V_j^T)^2 + \lambda (||U||_F^2 + ||V||_F^2)$
+$L(U,V) = \sum_{ij} W_{ij}(R_{ij} - U_i V_j^T)^2 + \lambda (\|U\|_F^2 + \|V\|_F^2)$
 
 여기서
 
 - $\lambda$ : regularization parameter
-- $||\cdot||_F$ : Frobenius norm
+- $\| \cdot \|_F$ : Frobenius norm
 
 ### wALS (Weighted Alternating Least Squares)
 사용자 벡터와 item 벡터가 따로 있기 때문에 ALS 이용해서 최적화를 한다. <br>
@@ -121,7 +121,7 @@ negative sampling은 확률분포에 기반해서 (=stochastic) 불안정하다.
 발표 중 헷갈리는 부분이 생겨 잘못 설명한 바람에 교수님께서 질문하신 부분이었다. <br>
 논문을 읽는 것에 그치지 않고, 블로깅과 한 장 정리를 하는 것도 좋으나 더 머리 속에 콱! 아주 콱! 박히게 걍 내꺼로 만들 수 있게 노력해야겠다 ㅜㅜ<br> <br>
 
-또한 사용자-아이템 행렬에서 sparsity 문제를 어떻게 해결할 것인지에 대해 논하는 논문이었는데, 읽으면서 수식부분은 어렵긴 하였으니 흥미로웠다. <br>
+또한 사용자-아이템 행렬에서 sparsity 문제를 어떻게 해결할 것인지에 대해 논하는 논문이었는데, 읽으면서 수식부분은 어렵긴 하였으나 흥미로웠다. <br>
 따라서 가능하다면 implicit data를 가지고 하는 recommender system 관련 프로젝트를 하고 싶어졌다. 
 
 
