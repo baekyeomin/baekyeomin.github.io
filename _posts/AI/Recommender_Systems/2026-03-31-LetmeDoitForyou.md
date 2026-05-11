@@ -47,7 +47,6 @@ ToolRec은 추천 과정을 사용자의 관심사를 attribute 단위로 탐색
 
 <span style="background-color: #fff3cd">핵심은 LLM이 한 번에 추천 결과를 내는 것이 아니라, Thought → Action → Observation 과정을 여러 round 반복하면서 추천 목록을 개선한다는 점이다.</span>
 
-<!-- p.2 Figure 1: ToolRec이 동작하는 전체 예시. LLM surrogate user가 genre, release_year, actor 등 attribute를 기준으로 Retrieval/Rank tool을 여러 round 호출하는 흐름을 보여주는 그림 -->
 ![ToolRec1](/assets/images/ToolRec1.png)
 
 ### 3. Problem Formulation
@@ -80,7 +79,7 @@ ToolRec은 크게 세 가지 구성요소로 이루어진다.
 - Attribute-oriented Tools
 - Memory Strategy
 
-<!-- p.3 Figure 2: ToolRec 전체 구조도. User Decision Simulation, Attribute-oriented Tools, Memory Strategy가 어떻게 연결되는지 보여주는 overview 그림 -->
+
 ![ToolRec2](/assets/images/ToolRec2.png)
 
 ### 1. User Decision Simulation
@@ -102,13 +101,15 @@ LLM은 다음 세 단계를 반복한다.
 
 각 step $t$에서 LLM 기반 surrogate user $\hat{u}$는 이전 observation $o_{t-1}$을 바탕으로 thought $g_t$와 action $A_t$를 생성한다.
 
-$\pi(g_t, A_t | c_t)$
+$\pi(g_t, A_t \mid c_t)$
 
 여기서 context $c_t$는 이전까지의 observation, thought, action을 모두 포함한다.
 
 $c_t = (o_0, g_1, A_1, o_1, \cdots, g_{t-1}, A_{t-1}, o_{t-1})$
 
 <span style="background-color: #fff3cd">즉, ToolRec은 단순히 LLM에게 “추천해줘”라고 하는 방식이 아니라, LLM이 reasoning을 통해 어떤 tool을 사용할지 단계적으로 결정하게 만든다.</span>
+
+![ToolRec25](/assets/images/ToolRec25.png)
 
 ### 2. Attribute-oriented Tools
 
@@ -167,7 +168,7 @@ Retrieval Tool은 attribute별로 별도 모델을 모두 학습하는 방식이
 
 논문에서는 SASRec 기반 구조를 사용한다.
 
-<!-- p.5 Figure 3: Attribute-oriented Retrieval Tool의 fine-tuning 구조. Pre-trained sequential model은 freeze하고, attribute-specific encoder와 dense layer만 fine-tuning하는 구조 -->
+
 ![ToolRec3](/assets/images/ToolRec3.png)
 
 사용자의 과거 행동 sequence $H$에 대해 sequential model은 다음과 같이 user representation을 만든다.
@@ -233,7 +234,6 @@ ToolRec의 성능을 평가하기 위해 세 가지 real-world dataset을 사용
   - Yelp Challenge 기반 local business 데이터셋
   - attribute: category, city, stars
 
-<!-- p.5 Table 1: 실험에 사용된 세 데이터셋 ML-1M, Amazon-Book, Yelp2018의 user 수, item 수, interaction 수, sparsity를 정리한 표 -->
 ![ToolRec4](/assets/images/ToolRec4.png)
 
 평가는 sequential recommendation setting에서 진행되었다.
@@ -303,7 +303,6 @@ ToolRec은 기존 추천시스템 및 기존 LLM 기반 추천 방법보다 좋�
 
 평가 지표는 $Recall@10$과 $NDCG@10$이다.
 
-<!-- p.7 Table 2: 세 데이터셋에서 ToolRec과 baseline들의 Recall@10, NDCG@10 성능을 비교한 핵심 결과표 -->
 ![ToolRec5](/assets/images/ToolRec5.png)
 
 #### Results
@@ -343,7 +342,6 @@ ToolRec의 변형 모델을 만들어 비교했다.
 - ToolRec
   - CoT 기반으로 매 round마다 Thought → Action → Observation을 반복하는 원래 방식
 
-<!-- p.7 Figure 4: ToolRec과 변형 모델들의 ablation 결과. w/ single, w/ multi, w/ Plan, ToolRec 성능 비교 -->
 ![ToolRec6](/assets/images/ToolRec6.png)
 
 #### Results
@@ -370,7 +368,6 @@ ToolRec이 추천 과정을 종료하는 round 수를 분석했다.
 - Hit Round: 추천 목록에 target item이 포함된 경우의 종료 round 분포
 - Hit/His Ratio: 해당 round에서의 성공 비율
 
-<!-- p.8 Figure 5: ToolRec의 종료 round 분포. 전체 종료 round와 target item hit가 발생한 종료 round를 함께 보여주는 그래프 -->
 ![ToolRec7](/assets/images/ToolRec7.png)
 
 #### Results
@@ -397,7 +394,6 @@ Attribute-oriented retrieval tool은 효율적이고 확장 가능한가?
 
 여기서 full + $a_1$은 attribute-specific model 전체를 fine-tuning하는 방식이고, frozen + $a_1$은 backbone을 freeze한 뒤 attribute-specific encoder만 학습하는 방식이다.
 
-<!-- p.8 Figure 6: Retrieval Tool 구성별 trainable parameters와 FLOPs 비교. frozen + a1 방식이 full fine-tuning보다 훨씬 적은 학습 파라미터를 사용함을 보여주는 그래프 -->
 ![ToolRec8](/assets/images/ToolRec8.png)
 
 #### Results
@@ -424,7 +420,6 @@ ToolRec은 LLM을 활용하기 때문에 기존 추천시스템 평가 방식으
 ToolRec은 Memory Strategy를 사용하여 추천된 item이 dataset directory에 존재하는지 확인한다.  
 만약 LLM이 실제 세계에는 존재하지만 dataset에는 없는 item을 추천하면, 기존 평가 기준에서는 failure로 처리된다.
 
-<!-- p.9 Figure 7: LLM이 dataset 밖의 실제 영화를 추천하여 기존 offline evaluation에서는 failure로 처리되는 사례. 실제 세계에는 존재하지만 데이터셋에 없으면 평가가 어려움을 보여줌 -->
 ![ToolRec9](/assets/images/ToolRec9.png)
 
 #### Result
@@ -454,7 +449,6 @@ ToolRec의 성능은 어떤 LLM을 사용하느냐에 따라 달라지는가?
 
 같은 prompt template을 사용하여 추천 성능을 비교했다.
 
-<!-- p.9 Figure 8: ChatGPT, Vicuna, PaLM 등 LLM 선택에 따른 ranking performance 비교. LLM의 reasoning 능력과 domain knowledge가 ToolRec 성능에 영향을 줌 -->
 ![ToolRec10](/assets/images/ToolRec10.png)
 
 #### Results
