@@ -1,6 +1,6 @@
 ---
 title: "[Paper Review] #01 Toward the Next Generation of Recommender Systems: A Survey of the State-of-the-Art and Possible Extensions"
-categories: [Activities, Recommender Systems]
+categories: [AI, Recommender Systems]
 tags:
   - AI
   - Recommender Systems

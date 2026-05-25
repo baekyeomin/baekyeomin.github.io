@@ -1,6 +1,6 @@
 ---
 title: "[Paper Review] #03 One-Class Collaborative Filtering"
-categories: [Activities, Recommender Systems]
+categories: [AI, Recommender Systems]
 tags:
   - AI
   - Recommender Systems

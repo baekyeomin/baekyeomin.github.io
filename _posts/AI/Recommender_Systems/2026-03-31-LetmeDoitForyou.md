@@ -1,6 +1,6 @@
 ---
 title: "[Paper Review] #05 Let Me Do It For You: Towards LLM Empowered Recommendation via Tool Learning"
-categories: [Activities, Recommender Systems]
+categories: [AI, Recommender Systems]
 tags:
   - AI
   - Recommender Systems
