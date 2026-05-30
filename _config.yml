@@ -126,7 +126,7 @@ author:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:baekyeomin@naver.com"
+      url: "mailto:yeomin100@kookmin.ac.kr"
     #- label: "Website"
     #  icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -141,7 +141,7 @@ author:
       url: "https://github.com/baekyeomin"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/yeomin_1oo/"
+      url: "https://instagram.com/yeomin100/"
 
 # Site Footer
 footer:
